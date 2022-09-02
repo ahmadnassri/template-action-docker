@@ -1,4 +1,5 @@
 additional:
+ - action-commit-lint
 
 files:
   - "!**/template-sync.yml"
