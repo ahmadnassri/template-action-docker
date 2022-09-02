@@ -1,4 +1,4 @@
-FROM scratch
+FROM alpine
 
 LABEL com.github.actions.name="" \
       com.github.actions.description="" \
@@ -11,4 +11,4 @@ WORKDIR /action
 
 COPY action ./
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/action/entrypoint.sh"]

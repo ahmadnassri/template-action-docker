@@ -6,3 +6,6 @@ files:
   - "!colophon.yml"
   - "!docs/README.md"
   - "!README.md"
+  - "!Dockerfile"
+  - "!action/*"
+  - ".env"

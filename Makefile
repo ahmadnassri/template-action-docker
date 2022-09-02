@@ -7,17 +7,26 @@
 pull: ## pull latest containers
 	@docker compose pull
 
-readme: ## run readme action
-	@docker compose run --rm readme
-
-lint: ## run super-linter
+lint: clean ## run mega-linter
 	@docker compose run --rm lint
 
-start: ## run app
-	@docker compose --profile app up
+readme: clean ## run readme action
+	@docker compose run --rm readme
 
-clean: ## remove running containers, volumes & anything else
-	@docker compose rm --force -v
+start: ## start the project in foreground
+	@docker compose up --renew-anon-volumes app
+
+build: clean ## start the project in background
+	@docker compose build app
+
+shell: ## start the container shell
+	@docker compose run --rm --entrypoint /bin/sh app
+
+stop: ## stop all running containers
+	@docker compose down --remove-orphans --rmi local
+
+clean: stop ## remove running containers, volumes, node_modules & anything else
+	@docker compose rm --stop --volumes --force
 
 # Utility methods
 ## Help: https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
