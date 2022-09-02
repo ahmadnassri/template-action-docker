@@ -1,16 +1,23 @@
 #!/usr/bin/make
 
+# ---------------------------------------------------- #
+# Note: this file originates in template-action-docker #
+# ---------------------------------------------------- #
+
 pull: ## pull latest containers
 	@docker compose pull
-
-lint: ## run super-linter
-	@docker compose run --rm lint
 
 readme: ## run readme action
 	@docker compose run --rm readme
 
-clean: ## remove running containers, volumes, node_modules & anything else
-	@docker compose rm --stop --volumes --force
+lint: ## run super-linter
+	@docker compose run --rm lint
+
+start: ## run app
+	@docker compose --profile app up
+
+clean: ## remove running containers, volumes & anything else
+	@docker compose rm --force -v
 
 # Utility methods
 ## Help: https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html

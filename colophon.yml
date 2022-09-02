@@ -1,8 +1,8 @@
 version: 2.0
 
-id: template-template
+id: template-action-docker
 
 about:
-  title: Template for templates
-  description: A template for GitHub Template Repositories!
-  repository: ahmadnassri/template-template
+  title: GitHub Docker Action Template
+  description: A template for Docker-based GitHub Actions
+  repository: ahmadnassri/template-action-docker

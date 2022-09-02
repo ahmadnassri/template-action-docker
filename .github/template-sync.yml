@@ -1,13 +1,8 @@
 additional:
-  # temporarily include repos manually # https://github.com/github/docs/issues/4894
-  - "template-*"
 
 files:
-  - "!.github/workflows/push.yml"
-  - "!.gitignore"
   - "!**/template-sync.yml"
+  - "!action.yml"
   - "!colophon.yml"
-  - "!docker-compose.yml"
-  - "!docs/**"
-  - "!Makefile"
+  - "!docs/README.md"
   - "!README.md"

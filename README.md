@@ -1,6 +1,6 @@
-# Template for templates
+# GitHub Docker Action Template
 
-A template for GitHub Template Repositories!
+A template for Docker-based GitHub Actions
 
 [![license][license-img]][license-url]
 [![release][release-img]][release-url]
@@ -16,7 +16,7 @@ Automated through [`@ahmadnassri/action-template-repository-sync`][]
 > Twitter: [@AhmadNassri](https://twitter.com/AhmadNassri)
 
 [license-url]: LICENSE
-[license-img]: https://badgen.net/github/license/ahmadnassri/template-template
+[license-img]: https://badgen.net/github/license/ahmadnassri/template-action-docker
 
-[release-url]: https://github.com/ahmadnassri/template-template/releases
-[release-img]: https://badgen.net/github/release/ahmadnassri/template-template
+[release-url]: https://github.com/ahmadnassri/template-action-docker/releases
+[release-img]: https://badgen.net/github/release/ahmadnassri/template-action-docker

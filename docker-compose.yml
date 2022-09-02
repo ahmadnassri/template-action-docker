@@ -1,7 +1,12 @@
+# ---------------------------------------------------- #
+# Note: this file originates in template-action-docker #
+# ---------------------------------------------------- #
+
 services:
   # ---- mega-linter ---- #
   lint:
-    image: oxsecurity/megalinter:v6.6.0
+    profiles: ["dev"]
+    image: oxsecurity/megalinter-javascript:v6
     volumes:
       - ./:/tmp/lint
     environment:
@@ -11,7 +16,16 @@ services:
 
   # ---- readme generator ---- #
   readme:
-    image: pandoc/core:2.13
+    profiles: ["dev"]
+    image: pandoc/minimal:2.18.0
     volumes:
       - ./:/data
     command: --defaults=.pandoc.yml
+
+  # ---- app ---- #
+  app:
+    profiles: ["app"]
+    privileged: true
+    build: .
+    env_file:
+      - .env

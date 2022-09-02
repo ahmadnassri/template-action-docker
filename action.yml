@@ -1,0 +1,16 @@
+name: GitHub Docker Action Template
+description: A template for Docker-based GitHub Actions
+
+branding:
+  color: purple
+  icon: monitor
+
+inputs:
+  github-token:
+    description: The GitHub token used to post comments on pull requests
+    default: ${{ github.token }}
+    required: false
+
+runs:
+  using: docker
+  image: docker://ghcr.io/ahmadnassri/:v1
