@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3
 
 LABEL com.github.actions.name="" \
       com.github.actions.description="" \
