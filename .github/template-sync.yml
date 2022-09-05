@@ -1,5 +1,6 @@
 additional:
- - action-commit-lint
+  - action-commit-lint
+  - action-semantic-release
 
 files:
   - "!**/template-sync.yml"
