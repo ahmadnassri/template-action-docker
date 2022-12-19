@@ -11,3 +11,5 @@ files:
   - "!Dockerfile"
   - "!action/*"
   - "!.env"
+  - "!.github/dependabot.yml"
+  - .github/dependabot-template.yml: .github/dependabot.yml
