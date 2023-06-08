@@ -13,4 +13,4 @@ inputs:
 
 runs:
   using: docker
-  image: docker://ghcr.io/ahmadnassri/:v1
+  image: docker://ghcr.io/ahmadnassri/:1.0.0
