@@ -1,6 +1,7 @@
 additional:
   - action-commit-lint
   - action-semantic-release
+  - action-workflow-queue
 
 files:
   - "!**/template-sync.yml"
