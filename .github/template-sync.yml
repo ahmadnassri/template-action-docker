@@ -17,4 +17,3 @@ files:
   - .github/template/push.yml: .github/workflows/push.yml
   - .github/template/pull_request_target.yml: .github/workflows/pull_request_target.yml
   - .github/template/dependabot.yml: .github/dependabot.yml
-
