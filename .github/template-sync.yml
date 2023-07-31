@@ -10,7 +10,7 @@ files:
   - "!docs/README.md"
   - "!README.md"
   - "!Dockerfile"
-  - "!action/*"
+  - "!src/*"
   - "!.env"
   - "!.github/dependabot.yml"
   - "!.github/workflows/*.yml"
