@@ -12,4 +12,6 @@ jobs:
   main:
     uses: ahmadnassri/actions/.github/workflows/pull-request-target.yml@master
     secrets: inherit
-    permissions: write-all
+    permissions:
+      contents: write
+      pull-requests: write
