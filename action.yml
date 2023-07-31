@@ -8,7 +8,7 @@ branding:
 inputs:
   github-token:
     description: The GitHub token used to post comments on pull requests
-    default: ${{ github.token }}
+    default: ${{ secrets.GITHUB_TOKEN }}
     required: false
 
 runs:
