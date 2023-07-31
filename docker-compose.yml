@@ -13,7 +13,6 @@ services:
       MEGALINTER_CONFIG: .github/linters/.mega-linter.yml
       REPORT_OUTPUT_FOLDER: none
       VALIDATE_ALL_CODEBASE: true
-      YAML_V8R_FILTER_REGEX_EXCLUDE: .*
 
   # ---- readme generator ---- #
   readme:
