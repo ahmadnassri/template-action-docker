@@ -6,13 +6,12 @@ LABEL com.github.actions.name="" \
   com.github.actions.color="" \
   maintainer="Ahmad Nassri <ahmad@ahmadnassri.com>"
 
-RUN mkdir /action
 WORKDIR /action
 
-COPY action ./
+COPY src ./
 
 USER nobody
 
 HEALTHCHECK NONE
 
-ENTRYPOINT ["/action/entrypoint.sh"]
+ENTRYPOINT ["/src/entrypoint.sh"]
