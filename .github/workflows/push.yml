@@ -97,7 +97,7 @@ jobs:
           submodules: true
 
       - id: release
-        uses: ahmadnassri/action-semantic-release@v2.2.3
+        uses: ahmadnassri/action-semantic-release@v2.2.4
         with:
           config: ${{ github.workspace }}/.semantic.json
         env:
