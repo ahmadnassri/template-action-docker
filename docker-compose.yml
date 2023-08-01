@@ -27,6 +27,15 @@ services:
     profiles: ["action"]
     build: .
 
+  action-test:
+    extends: action
+    profiles: ["action"]
+    volumes:
+      - ./test:/github/workspace/test
+      - .git:/github/workspace/.git
+    env_file:
+      - .env
+
   # ---- main container ---- #
   app:
     profiles: ["app"]
@@ -40,7 +49,7 @@ services:
     env_file:
       - .env
 
-  test:
+  app-test:
     extends: app
     profiles: ["test"]
     command: run test:ci -- --reporter=classic
