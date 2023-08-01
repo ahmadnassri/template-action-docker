@@ -4,7 +4,6 @@ additional:
   - action-workflow-queue
 
 files:
-  - "!**/template-sync.yml"
   - "!action.yml"
   - "!colophon.yml"
   - "!docs/README.md"
@@ -12,6 +11,7 @@ files:
   - "!Dockerfile"
   - "!src/*"
   - "!.env"
+  - "!**/template-sync.yml"
   - "!.github/dependabot.yml"
   - "!.github/workflows/*.yml"
   - .github/template/push.yml: .github/workflows/push.yml
